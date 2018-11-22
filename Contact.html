@@ -4,69 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hip Squirrel Studios</title>
-  
+  <link rel="stylesheet"
+      href="AltStyleSheets.css>
    
  
    <!--internale stylesheets-->
     <style>
-      .menu-hover-lines {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-  transition: all 0.35s ease;
-}
-.menu-hover-lines li a {
-  padding: 0.75rem 0;
-  color: rgba(10, 10, 10, 0.5);
-  position: relative;
-  margin-left: 1rem;
-}
-.menu-hover-lines li:first-child a {
-  margin-left: 0;
-}
-.menu-hover-lines li.active > a {
-  background-color: transparent;
-}
-.menu-hover-lines a:before,
-.menu-hover-lines a::after {
-  height: 3px;
-  position: absolute;
-  content: '';
-  transition: all 0.35s ease;
-  background-color: #1779ba;
-  width: 0;
-}
-.menu-hover-lines a::before {
-  top: 0;
-  left: 0;
-}
-.menu-hover-lines a::after {
-  bottom: 0;
-  right: 0;
-}
-.menu-hover-lines a:hover,
-.menu-hover-lines li.active > a {
-  color: #0a0a0a;
-  transition: all 0.35s ease;
-}
-.menu-hover-lines a:hover::before,
-.menu-hover-lines .active a::before,
-.menu-hover-lines a:hover::after,
-.menu-hover-lines .active a::after {
-  width: 100%;
-}
-      div.background {
-    background: url(IMG_0045(1).jpg) repeat;
-    border: 2px solid black;
-}
-
-div.transbox {
-    margin: 30px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+     
+  
 
     </style>
 <!-- end of internal style sheets-->    
@@ -91,7 +36,7 @@ div.transbox {
     </div>
     <!-- End Top Bar -->
    
-   <hr>
+ <div class="background">  
 <div class="row">
 <div class="medium-6 columns">
 <h3>Contact Me</h3>
@@ -119,6 +64,6 @@ Message
 <script>
       $(document).foundation();
     </script>
-    <hr>
+    
   </body>
 </html>
