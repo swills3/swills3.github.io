@@ -54,3 +54,20 @@
 .menu-hover-lines .active a::after {
   width: 100%;
 }
+
+.foundation-5-top-bar {
+  background: #333;
+  color: #fefefe;
+}
+
+.foundation-5-top-bar .menu {
+  background: #333;
+}
+
+.foundation-5-top-bar .menu a {
+  color: #fefefe;
+}
+
+.foundation-5-top-bar .is-dropdown-submenu {
+  border: 0;
+}
