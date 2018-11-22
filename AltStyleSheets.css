@@ -55,19 +55,20 @@
   width: 100%;
 }
 
-.foundation-5-top-bar {
-  background: #333;
-  color: #fefefe;
+div.background {
+    background: url(IMG_0045(1).JPG) repeat;
+    border: 2px solid black;
 }
 
-.foundation-5-top-bar .menu {
-  background: #333;
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
-.foundation-5-top-bar .menu a {
-  color: #fefefe;
-}
-
-.foundation-5-top-bar .is-dropdown-submenu {
-  border: 0;
-}
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
