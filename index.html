@@ -62,22 +62,53 @@
 .menu-hover-lines .active a::after {
   width: 100%;
 }
-      .foundation-5-top-bar {
-  background: #333;
-  color: #fefefe;
+     *{
+  margin: 0;
+  padding: 0;
 }
 
-.foundation-5-top-bar .menu {
-  background: #333;
+body {
+
+nav ul li {
+  float: left;
+  list-style:none;
+  position: relative;
 }
 
-.foundation-5-top-bar .menu a {
-  color: #fefefe;
+nav ul li a {
+  display: block;
+  font-family: arial;
+  color: #222;
+  font-size: 14px;
+  padding: 22px 14px;
+  text-decoration: none;
 }
 
-.foundation-5-top-bar .is-dropdown-submenu {
-  border: 0;
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
 }
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+            width: 180px;
+            border-radius: 4px;
+
+nav ul li ul li a {
+                  padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+                  background-color: #f3f3f3;
+}
+
 
     </style>
   </head>
