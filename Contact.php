@@ -105,7 +105,7 @@
            <!-- Begin PHP -->
           <?php require 'contactform.php';
 Use require when file is required
-#Use include when the file is not required and application should continue when file is not found.
+Use include when the file is not required and application should continue when file is not found.
 ?>
 
 <form class="contact-form" action="contactform.php" method="post">
