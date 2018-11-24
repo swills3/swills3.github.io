@@ -99,12 +99,16 @@
   <div class="row">
     <div class="medium-6 columns">
 <h3>Contact Me</h3>
-<p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+<p>Thank you for looking at my website it is still undergoing renovation but if you would like to contact me my email is:slwillson4@gmail.com.</p>
     </div>
         <div class="medium-6 columns">
            <!-- Begin PHP -->
-          <main>
-<form method="post" action="contactform.php">          
+          <?php require 'contactform.php'; 
+#Use require when file is required
+#Use include when the file is not required and application should continue when file is not found.
+?>
+          
+<form class="contact-form" action="contactform.php" method="post">         
 <label>Name
 <input type="text" placeholder="Name">
 </label>
@@ -113,11 +117,11 @@
 </label>
 <label>
 Message
-<textarea placeholder="Message"><textarea rows="5" cols="20" name="message"></textarea>
+<textarea placeholder="Message"></textarea>
 </label>
 <input type="submit" class="button expanded" value="Submit">
-  </form>
-            </main>
+</form> 
+           
            <!-- End PHP --> 
         </div>
     </div>
