@@ -104,7 +104,7 @@
         <div class="medium-6 columns">
            <!-- Begin PHP -->
           <?php require 'contactform.php';
-#Use require when file is required
+Use require when file is required
 #Use include when the file is not required and application should continue when file is not found.
 ?>
 
