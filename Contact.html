@@ -6,7 +6,7 @@
     <title>Hip Squirrel Studios</title>
    <link rel="stylesheet"
       href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    
+
     <!--internale stylesheets-->
     <style>
       .menu-hover-lines {
@@ -56,9 +56,35 @@
 .menu-hover-lines .active a::after {
   width: 100%;
 }
+p {
+  color: black;
+}
+
+.animation {
+  width: 30px;
+  height: 50px;
+  position: relative;
+  background-image: url("image2.jpg");
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-size: contain;
+  top: 150px;
+  right: 10px;
+  /* left: 60px; */
+  opacity: .6;
+  margin: 0px;
+}
+
+@keyframes example {
+  0%   {left:0px;}
+  50%  {left:200px;}
+  100% {left:0px;}
+}
 
     </style>
-<!-- end of internal style sheets-->    
+<!-- end of internal style sheets-->
   </head>
   <body>
 
@@ -67,15 +93,15 @@
       <div class="top-bar-left">
         <ul class="menu menu-hover-lines">
           <li><a href="index.html">Hip Squirrel Studios</li>
-        </ul>   
+        </ul>
       </div>
       <div class="top-bar-right">
-        <ul class="menu menu-hover-lines">
+        <!-- <ul class="menu menu-hover-lines">
+          <li><a href="Contact.html">Contact</a></li>
           <li><a href="CaseStudies.html">Case Studies</a></li>
           <li><a href="OtherWorks.html">Other Works</a></li>
           <li><a href="AboutMe.html">About me</a></li>
-          <li class="active"><a href="Contact.html">Contact</a></li>
-        </ul>
+        </ul> -->
       </div>
     </div>
     <!-- End Top Bar -->
@@ -84,31 +110,28 @@
     <form method="post" action="contactform.php">
         <label>Name:</label>
         <input name="sender">
-
         <label>Email address:</label>
         <input name="senderEmail">
-
         <label>Message:</label>
         <textarea rows="5" cols="20" name="message"></textarea>
-
         <input type="submit" name="submit">
     </form>
  </main>  -->
-     <!-- End PHP -->  
-<div class="background">  
+     <!-- End PHP -->
+<div class="background">
   <div class="row">
     <div class="medium-6 columns">
 <h3>Contact Me</h3>
-<p>Thank you for looking at my website it is still undergoing renovation but if you would like to contact me my email is:slwillson4@gmail.com.</p>
+<p>Thank you for looking at my website it is still undergoing renovation. The contact form is pure aesthetic but if you would like to contact me my email is: slwillson4@gmail.com</p>
     </div>
         <div class="medium-6 columns">
            <!-- Begin PHP -->
-          <?php require 'contactform.php'; 
+          <?php require 'contactform.php';
 #Use require when file is required
 #Use include when the file is not required and application should continue when file is not found.
 ?>
-          
-<form class="contact-form" action="contactform.php" method="post">         
+
+<form class="contact-form" action="contactform.php" method="post">
 <label>Name
 <input type="text" placeholder="Name">
 </label>
@@ -120,9 +143,9 @@ Message
 <textarea placeholder="Message"></textarea>
 </label>
 <input type="submit" class="button expanded" value="Submit">
-</form> 
-           
-           <!-- End PHP --> 
+</form>
+
+           <!-- End PHP -->
         </div>
     </div>
 </div>
@@ -131,6 +154,8 @@ Message
 <script>
       $(document).foundation();
     </script>
-    
+    <div id="div1">
+    </div>
+
   </body>
 </html>
