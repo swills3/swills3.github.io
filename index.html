@@ -1,150 +1,113 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hip Squirrel Studios</title>
-    <link rel="stylesheet"
-      href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    
-    
-    
-    <!--internale stylesheets-->
-  
-<!-- end of internal style sheets-->    
-  </head>
-  <body>
+<head>
+<link rel="stylesheet" href="Stuff.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<style>
 
-    <!-- Start Top Bar -->
-     <div class="top-bar">
-<div class="top-bar-left">
-<ul class="menu">
-<li class="menu-text"><a href="index.html">Hip Squirrel Studios</li>
-<li><a href="CaseStudies.html">Case Studies</a></li>
-<li><a href="OtherWorks.html">Other Works</a></li>
-</ul>
+.animation {
+  width: 30px;
+  height: 50px;
+  position: relative;
+  background-image: url("image2.jpg");
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-size: contain;
+  top: 150px;
+  right: 10px;
+  /* left: 60px; */
+  opacity: .6;
+  margin: 0px;
+}
+
+@keyframes example {
+  0%   {left:0px;}
+  50%  {left:200px;}
+  100% {left:0px;}
+}
+
+#div1 {
+width: 500px;
+height: 100px;
+position: relative;
+background-color: black;
+opacity: .2;
+bottom: 325px;
+left: -250px;
+
+}
+
+#div2 {
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Times New Roman", Times, serif;
+  overflow: visible;
+}
+
+</style>
+<!--begin of javascript  -->
+<script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!--end of javascript  -->
+</head>
+
+<body>
+  <header>
+  <h1>Hip Squirrel Studios</h1>
+<!-- <i class="fa fa-facebook-official" style="font-size:24px"></i>
+<i class="fa fa-twitter" style="font-size:24px"></i>
+<i class="fa fa-instagram" style="font-size:24px"></i>
+<i class="fa fa-youtube-play" style="font-size:24px;color:red"> -->
+</header>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="OtherWorks.html">Other Works</a>
+  <a href="AboutMe.html">About Us</a>
+  <a href="Contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-<div class="top-bar-right">
-<ul class="menu">
-<li><a href="AboutMe.html">About me</a></li>
-<li><a href="Contact.html">Contact</a></li>
-</ul>
+<div class="callout large">
+  <div class="row column text-center">
+    <h2>Changing the World Through Ideas</h2>
+<div id="div2";  style="position: absolute;
+right: 0px; width: 800px;">
+    <p class="lead">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+
+       <!-- In time ideas take root and the seeds planted become a forest asasdasdkajsbdkasjbdkajbdkajsbdkajsbdkajsbdkajsbdkajsbdkaj -->
+  </p>
+  </div>
+
+    <a href="https://slwillson.wordpress.com/" target="_blank" class="button large">Blog</a>
+    <a href="https://www.linkedin.com/in/samuel-willson-007047117" target="_blank" class="button large hollow">Resume</a>
 </div>
 </div>
-    <!-- End Top Bar -->
 
-    <div class="callout large">
-      <div class="row column text-center">
-        <h1>Changing the World Through Ideas</h1>
-        <p class="lead">
-          In time ideas take root and the seeds planted become a forest
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+vel illum dolore eu feugiat nulla facilisis at vero eros et 
+accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+</div>
+<div class="animation"></div>
 
-        </p>
-        <a href="https://slwillson.wordpress.com/" target="_blank" class="button large">Blog</a>
-        <a href="https://www.linkedin.com/in/samuel-willson-007047117" target="_blank" class="button large hollow">Resume</a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="medium-6 columns medium-push-6">
-        <img class="thumbnail" src="https://placehold.it/750x350">
-      </div>
-      <div class="medium-6 columns medium-pull-6">
-        <h2>Our Agency, our selves.</h2>
-        <p>
-          Still working on website.
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="medium-4 columns">
-        <h3>Wood Workings</h3>
-        <p>Still working on website.</p>
-      </div>
-      <div class="medium-4 columns">
-        <h3>Javascript</h3>
-        <p>Still working on website.</p>
-      </div>
-      <div class="medium-4 columns">
-        <h3>Marketing</h3>
-        <p>Still working on website.</p>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="row column">
-      <ul class="vertical medium-horizontal menu expanded text-center">
-        <li><a href="#"><div class="stat">28</div><span>Websites</span></a></li>
-        <li><a href="#"><div class="stat">43</div><span>Apps</span></a></li>
-        <li><a href="#"><div class="stat">95</div><span>Ads</span></a></li>
-        <li><a href="#"><div class="stat">59</div><span>Cakes</span></a></li>
-        <li><a href="#"><div class="stat">18</div><span>Logos</span></a></li>
-      </ul>
-    </div>
-
-    <hr>
-
-    <div class="row column">
-      <h3>Our Recent Work</h3>
-    </div>
-
-    <div class="row medium-up-3 large-up-4">
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/550x550">
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="row column">
-      <ul class="menu">
-        <li><a href="#">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-        <li><a href="#">Four</a></li>
-      </ul>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js">
-    </script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+<div id="div1">
+</div>
+</body>
 </html>
