@@ -4,7 +4,7 @@
   /* opacity: 0.6; */
   overflow: hidden;
   position: relative;
-  bottom: 55px;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -17,8 +17,9 @@
   text-decoration: none;
   font-size: 17px;
   border-radius: 70px;
-  /* position: relative;
-  bottom: 35px; */
+  position: relative;
+  margin-bottom: 5px;
+
 }
 
 /* Change the color of links on hover */
@@ -58,39 +59,9 @@
     text-align: left;
   }
 }
-/* background-image: {
-  opacity: .1;
-} */
-h1 {
-  margin: auto;
-  font-family: Indubitably;
-  position: relative;
-  bottom: 55px;
-  opacity: .7;
-  /* text-shadow: 3px 2px black; */
-  color: white;
-}
-h2 {
-  font-family: didot;
-  color: white;
-  position: relative;
-  top: 25px;
-}
 
-p {
-  border-left: 4px solid #4CAF50;
-  background-color: lightgrey;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  margin-right: 50px;
-  margin-left: 50px;
-  /* text-indent: 15px; */
-  text-align: justify;
-  /* direction: rtl; */
-  font-family: "Times New Roman", Times, serif;
-  overflow: auto;
-  height: 100px;
-}
+
+
 
 .button {
   background-color: #4CAF50; /* Green */
@@ -103,8 +74,8 @@ p {
   display: inline-block;
   font-size: 16px;
   margin-right: 5px;
-  left: 350px;
-  top: 180px;
+
+
   position: relative;
 }
 .button:hover {
@@ -112,42 +83,136 @@ p {
   color: black;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+h1 {
+   font-size: 100px;
+   color: white;
+   text-align: center;
+ }
 
+ /* Add media query below */
+
+ @media (max-height: 800px) {
+
+ }
+
+/*
 div {
-  padding-top: 15px;
-  padding-right: 25px;
-  padding-bottom: 15px;
-  padding-left: 25px;
-  margin-left: auto;
-  margin-right: auto;
+
+
+  font-family: "Times New Roman", Times, serif;
+
+}
+*/
+#ball {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
+
+.ball1{
+right: 500px;
+
+}
+p{
+  color: white;
   font-family: "Times New Roman", Times, serif;
 
 }
 
-body {
-background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("https://slwillson.files.wordpress.com/2018/12/cropped-20180325_183221.jpg");
-  /* background-repeat: repeat-y; */
-  /* background-repeat: no-repeat; */
-    /* background-position: bottom ; */
-    background-size: contain;
-    position: relative;
-    /* top: 400px; */
-    /* right: 100px; */
-    background-origin: content-box;
-    padding: 50px;
+p.ontop {
+  position: relative;
+top: -310px;
+
+  right:-10px;
+  animation-name: squirrel;
+  animation-duration: 5s;
+
+  animation-fill-mode: forwards;
 }
 
-.newspaper {
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
-  column-count: 3;
-  -webkit-column-width: 100px; /* Chrome, Safari, Opera */
-  -moz-column-width: 100px; /* Firefox */
-  column-width: 100px;
-  position: relative;
-  top: 150px;
-}
+
+.stars {
+    background-color: white;
+    height:5px;
+    width: 5px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+
+  }
+
+  .star-1 {
+    margin-top: -15%;
+    margin-left: 90%;
+    top:50px;
+    animation-duration: 1s;
+
+    animation-name: twinkle;
+  }
+
+  .star-2 {
+    margin-top: -5%;
+    margin-left: 45%;
+    animation-duration: 1s;
+
+    animation-name: twinkle;
+  }
+
+  .star-3 {
+    margin-top: -1%;
+    margin-left: 70%;
+    animation-duration: 1s;
+
+    animation-name: twinkle;
+  }
+
+
+
+  @keyframes twinkle {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  #back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+  }
+
+
+
 
 </style>
+
